@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Styles spécifiques */
+[alt="Logo developpeuse web"] {
+  width: 160px;
+  align-self: center;
+  padding-left: 10px;
+}
+body {
+  background-color: #f8f4ef;
+  color: #373434;
+  font-family: cormorant garamond ;
+}
+
+
+
+/* Media queries */
+@media (min-width: 768px) {
+  [alt="Logo developpeuse web"] {
+    height: 190px;
+  }
+}
+
+@media (min-width: 1200px) {
+  [alt="Logo developpeuse web"] {
+    height: 200px;
+  }
+}
