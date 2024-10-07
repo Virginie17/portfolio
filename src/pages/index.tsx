@@ -5,7 +5,7 @@ import Skills from '../components/Skills';
 import Portfolio from '../components/Projects';
 import Footer from '../components/Footer';
 import Contact from '../components/Contact';
-import ScrollToTop from '../components/ScrollToTop';
+import ScrollToTop from '../components/Scroll';
 import { library } from '@fortawesome/fontawesome-svg-core';
 import { fas } from '@fortawesome/free-solid-svg-icons';
 

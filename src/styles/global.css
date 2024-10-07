@@ -11,20 +11,22 @@
 body {
   background-color: #f8f4ef;
   color: #373434;
-  font-family: cormorant garamond ;
+  font-family: 'Cormorant Garamond', sans-serif;
+  max-width: 1440px;
+}
+@keyframes zoom-rotate-in {
+  from {
+    opacity: 0;
+    transform: scale(0.5) rotate(-15deg);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
 }
 
-
+.animate-zoom-rotate-in {
+  animation: zoom-rotate-in 1.5s ease-out;
+}
 
 /* Media queries */
-@media (min-width: 768px) {
-  [alt="Logo developpeuse web"] {
-    height: 190px;
-  }
-}
-
-@media (min-width: 1200px) {
-  [alt="Logo developpeuse web"] {
-    height: 200px;
-  }
-}

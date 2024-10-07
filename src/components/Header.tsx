@@ -21,12 +21,6 @@ const Header: React.FC = () => {
         </a>
       </div>
       <section id="banner" className="relative flex flex-col items-center justify-center w-full h-[500px]">
-        <nav className="flex space-x-4 mb-4">
-          <a href="#about me" className="text-black">About Me</a>
-          <a href="#skills" className="text-black">Skills</a>
-          <a href="#projects" className="text-black">Projects</a>
-          <a href="#contact" className="text-black">Contact</a>
-        </nav>
         <figure className="absolute inset-0 m-0 w-full h-full z-[-1]">
           <Image
             src={bannerImg}
@@ -35,6 +29,13 @@ const Header: React.FC = () => {
             layout="fill"
           />
         </figure>
+        <h1 className="text-3xl text-center text-black mt-20 animate-zoom-rotate-in">I'm a Front-End Developer</h1>
+        <nav className="flex space-x-4 mb-4 mt-8"> 
+          <a href="#about me" className="text-black">About Me</a>
+          <a href="#skills" className="text-black">Skills</a>
+          <a href="#projects" className="text-black">Projects</a>
+          <a href="#contact" className="text-black">Contact</a>
+        </nav>
       </section>
     </header>
   );

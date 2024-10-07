@@ -20,120 +20,93 @@
         "alt": "Email Icon"
     },
     "skills": [
-        {
-            "name": "HTML",
-            "img": "./logo/html.webp",
-            "alt": "Logo HTML",
-            "url": "https://developer.mozilla.org/fr/docs/Web/HTML",
-            "category": "Front"
-        },
-        {
-            "name": "CSS",
-            "img": "./logo/css.webp",
-            "alt": "Logo CSS",
-            "url": "https://developer.mozilla.org/fr/docs/Web/CSS",
-            "category": "Front"
-        },
+        
         {
             "name": "SASS",
-            "img": "./logo/sass.webp",
+            "img": "/assets/logo/sass.webp",
             "alt": "Logo Saas",
-            "url": "https://sass-lang.com/",
             "category": "Front"
         },
         {
             "name": "JavaScript",
-            "img": "./logo/js.webp",
+            "img": "/assets/logo/js.webp",
             "alt": "Logo JavaScript",
-            "url": "https://developer.mozilla.org/fr/docs/Web/JavaScript",
             "category": "Front"
         },
         {
             "name": "React",
-            "img": "./logo/react.webp",
+            "img": "/assets/logo/react.webp",
             "alt": "Logo React",
-            "url": "https://fr.react.dev/",
             "category": "Front"
         },
         {
             "name": "Redux",
-            "img": "./logo/redux.webp",
+            "img": "/assets/logo/redux.webp",
             "alt": "Logo Redux",
-            "url": "https://react-redux.js.org/",
             "category": "Front"
         },
         {
             "name": "Vite",
-            "img": "./logo/vite.webp",
+            "img": "/assets/logo/vite.webp",
             "alt": "Logo vite",
-            "url": "https://v3.vitejs.dev/guide/",
             "category": "Front"
         },
         {
             "name": "Typescript",
-            "img": "./logo/typescript.webp",
+            "img": "/assets/logo/typescript.webp",
             "alt": "Logo typescript",
-            "url": "https://www.typescriptlang.org/",
             "category": "Front"
         },
         {
             "name": "Tailwindcss",
-            "img": "./logo/tailwindcss.webp",
+            "img": "/assets/logo/tailwindcss.webp",
             "alt": "Logo tailwindcss",
-            "url": "https://tailwindcss.com/",
             "category": "Front"
         },
         {
             "name": "Next.js",
-            "img": "./logo/nextjs.webp",
+            "img": "/assets/logo/nextjs.webp",
             "alt": "Logo nextjs",
-            "url": "https://nextjs.org/",
             "category": "Front"
         },
         {
             "name": "Node.js",
-            "img": "./logo/nodejs.webp",
+            "img": "/assets/logo/nodejs.webp",
             "alt": "Logo nodejs",
-            "url": "https://nodejs.org/en/",
             "category": "Autres"
         },
         {
             "name": "MongoDB",
-            "img": "./logo/mongodb.webp",
+            "img": "/assets/logo/mongodb.webp",
             "alt": "Logo mongodb",
-            "url": "https://www.mongodb.com/",
             "category": "Autres"
         },
         {
             "name": "Github",
-            "img": "./logo/github.webp",
+            "img": "/assets/logo/github.webp",
             "alt": "Logo Github",
-            "url": "https://github.com/virginie17",
             "category": "Autres"
         },
         {
             "name": "Figma",
-            "img": "./logo/figma.webp",
+            "img": "/assets/logo/figma.webp",
             "alt": "Logo Figma",
-            "url": "https://www.figma.com/fr/",
             "category": "Autres"
         },
         {
             "name": "Méthode Agile",
-            "img": "./logo/agile.webp",
+            "img": "/assets/logo/agile.webp",
             "alt": "Logo agile",
-            "url": "https://manifesteagile.fr/",
             "category": "Autres"
         },
         {
             "name": "SEO",
-            "img": "./logo/seo.webp",
+            "img": "/assets/logo/seo.webp",
             "alt": "Logo SEO",
-            "url": "https://developers.google.com/search/docs/fundamentals/seo-starter-guide?hl=fr",
             "category": "Autres"
         }
     ],
-    "portfolio": [
+    "projets": [
         {
             "id": 1,
             "name": "Oh my food",
@@ -142,7 +115,7 @@
             "objectif1": "Versionner son projet avec Git et Github",
             "objectif2": "Intégrer une maquette en mobile-first",
             "objectif3": "Mettre en œuvre des animations CSS",
-            "image": "/projets/projets/ohmyfood.webp",
+            "image": "/assets/projets/ohmyfood.webp",
             "alt": "image du site web Oh my food, de restauration",
             "url": "https://virginie17.github.io/projet-4-oh-my-food/",
             "github": "https://github.com/Virginie17/projet-4-oh-my-food.git",
@@ -156,7 +129,7 @@
             "objectif1": "Gérer les événements utilisateurs avec JavaScript",
             "objectif2": "Manipuler les éléments du DOM avec JavaScript",
             "objectif3": "Récupérer les données utilisateurs dans le JavaScript via des formulaires",
-            "image": "/projets/sophiebluel.webp",
+            "image": "/assets/projets/sophiebluel.webp",
             "alt": "image portrait de Sophie Bluel",
             "url": "https://virginie17.github.io/projet-6-sophie-bluel/",
             "github": "https://github.com/Virginie17/projet-6-sophie-bluel.git",
@@ -171,7 +144,7 @@
             "objectif2": "Configurer la navigation entre les pages de l'application avec React Router",
             "objectif3": "Développer des éléments de l'interface d'un site web grâce à des composants React",
             "objectif4": "Mettre en œuvre des animations CSS",
-            "image": "/projets/kasa.webp",
+            "image": "/assets/projets/kasa.webp",
             "width": "500",
             "height": "300",
             "alt": "image du site Kasa, application de logement",
@@ -185,7 +158,7 @@
             "texte": "Optimisation du référencement d’un site de photographe, en améliorant sa performance et son accessibilité.",
             "title": "Objectifs pédagogiques:",
             "objectif1": "Optimiser la performance d'un site web",
-            "image": "/projets/ninacarducci.webp",
+            "image": "/assets/projets/ninacarducci.webp",
             "alt": "image du site Nina Carducci",
             "url": "https://virginie17.github.io/nina-carducci/",
             "github": "https://github.com/Virginie17/nina-carducci.git",
@@ -199,7 +172,7 @@
             "objectif1": "Débugger un site web grâce aux Chrome DevTools",
             "objectif2": "Rédiger un cahier de recette pour tester un site",
             "objectif3": "Comprendre les différents tests : tests fonctionnels, tests d'intégration, test unitaire",
-            "image": "/projets/724.webp",
+            "image": "/assets/projets/724.webp",
             "alt": "image du site 724 event, site d'évènement",
             "url": "https://github.com/Virginie17/724events.git",
             "github": "https://github.com/Virginie17/724events.git",
@@ -213,7 +186,7 @@
             "objectif1": "Configurer des routes API pour la communication client / serveur",
             "objectif2": "Implémenter la gestion des données avec Redux pour assurer le fonctionnement du front",
             "objectif3": "Afficher les données du back end sur l'interface via des appels API",
-            "image": "/projets/argentbank.webp",
+            "image": "/assets/projets/argentbank.webp",
             "alt": "image du site ArgentBank",
             "url": "https://github.com/Virginie17/argentbank.git",
             "github": "https://github.com/Virginie17/argentbank.git",
