@@ -28,8 +28,8 @@ const App: React.FC = () => {
     <React.StrictMode>
       <Header />
       <About />
-      <Portfolio />
       <Skills />
+      <Portfolio />
       <Contact />
       <ScrollToTop />
       <Footer />

@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
-import AboutImg from '../../public/assets/img/photo de moi.jpg';
+import AboutImg from '../../public/assets/img/photo de moi.webp';
 import Button from './Button';
-{/*import Modal from './Modal';/*/}
 import Image from 'next/image';
 
 const About: React.FC = () => {
@@ -22,7 +21,7 @@ const About: React.FC = () => {
           src={AboutImg}
           alt="photo de virginie"
           loading="lazy"
-          className="w-auto h-auto max-w-xs shadow-lg rounded-lg bg-transparent"
+          className="w-full h-auto max-w-md md:max-w-lg lg:max-w-xl shadow-lg rounded-lg bg-transparent"
         />
         <figcaption className="mt-5">
           <Button text="Qui suis-je ?" onClick={openModal} />

@@ -28,5 +28,19 @@ body {
 .animate-zoom-rotate-in {
   animation: zoom-rotate-in 1.5s ease-out;
 }
+@keyframes zoom-rotate {
+  0% {
+    transform: scale(0.5) rotate(0deg);
+    opacity: 0;
+  }
+ 
+  100% {
+    transform: scale(1) rotate(360deg);
+    opacity: 1;
+  }
+}
 
-/* Media queries */
+.animate-zoom-rotate {
+  animation: zoom-rotate 3s ease-in-out infinite;
+}
+

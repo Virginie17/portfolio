@@ -1,6 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
-import bannerImg from '../../public/assets/img/banner.png';
+import bannerImg from '../../public/assets/img/banner.webp';
 import data from '../../public/data.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -29,7 +29,7 @@ const Header: React.FC = () => {
             layout="fill"
           />
         </figure>
-        <h1 className="text-3xl text-center text-black mt-20 animate-zoom-rotate-in">I'm a Front-End Developer</h1>
+        <h1 className="text-3xl text-center text-black mt-20 animate-zoom-rotate-in">I am a Front-End Developer</h1>
         <nav className="flex space-x-4 mb-4 mt-8"> 
           <a href="#about me" className="text-black">About Me</a>
           <a href="#skills" className="text-black">Skills</a>

@@ -13,8 +13,13 @@ interface Project {
   url: string;
 }
 
-const NextArrow = (props: any) => {
-  const { className, style, onClick } = props;
+interface NextArrowProps {
+  className: string;
+  style: object;
+  onClick: () => void;
+}
+
+const NextArrow: React.FC<NextArrowProps> = ({ className, style, onClick }) => {
   return (
     <div
       className={`${className} custom-arrow`}
@@ -24,8 +29,7 @@ const NextArrow = (props: any) => {
   );
 };
 
-const PrevArrow = (props: any) => {
-  const { className, style, onClick } = props;
+const PrevArrow: React.FC<NextArrowProps> = ({ className, style, onClick }) => {
   return (
     <div
       className={`${className} custom-arrow`}
@@ -53,18 +57,18 @@ const Portfolio: React.FC = () => {
     slidesToScroll: 1,
     autoplay: true,
     autoplaySpeed: 3000,
-    nextArrow: <NextArrow />,
-    prevArrow: <PrevArrow />,
+    nextArrow: <NextArrow className="" style={{}} onClick={() => {}} />,
+    prevArrow: <PrevArrow className="" style={{}} onClick={() => {}} />,
   };
 
   return (
     <section id="projects" className="flex flex-col items-center w-full box-border py-10">
       <h2 className="text-3xl font-bold mb-8">Projects</h2>
-      <div className="w-full max-w-4xl p-4 rounded-lg bg-white shadow-lg border-2 border-black">
+      <div className="w-full max-w-2xl p-4 rounded-lg bg-gray-100 shadow-lg border-2 border-black">
         <Slider {...settings} className="w-full">
           {projects.map((project) => (
             <div key={project.id} className="p-4">
-              <Image src={project.image} alt={project.alt} width={600} height={400} className="w-full h-auto max-w-xs mx-auto" />
+              <Image src={project.image} alt={project.alt} width={600} height={300} className="w-full h-auto max-h-64 mx-auto" />
               <h3 className="text-xl font-bold text-center mt-4">{project.name}</h3>
               <p className="text-center">{project.texte}</p>
               <a href={project.url} className="text-blue-500 hover:underline block text-center mt-2">Voir le projet</a>

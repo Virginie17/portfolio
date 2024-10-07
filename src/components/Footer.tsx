@@ -1,6 +1,4 @@
 import React from 'react';
-import Image from 'next/image';
-import Logo from '../../public/assets/img/logo.png'; 
 import data from '../../public/data.json';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedin, faGithub } from '@fortawesome/free-brands-svg-icons';
@@ -11,9 +9,7 @@ const Footer: React.FC = () => {
 
   return (
     <footer id="footer" className="relative flex flex-col items-center gap-2.5 py-12 bg-tertiary-color">
-      <div className="text-lg z-10">
-        <Image src={Logo} alt="Logo" width={100} height={100} />
-      </div>
+      
       <ul className="flex flex-row gap-7 z-10">
         <li>
           <a href={`mailto:${data.email.url}`} aria-label="Email">
