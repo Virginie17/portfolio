@@ -1,19 +1,33 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Styles spécifiques */
-[alt="Logo developpeuse web"] {
-  width: 160px;
-  align-self: center;
-  padding-left: 10px;
-}
+
 body {
+  font-family: 'Montserrat';
   background-color: #f8f4ef;
   color: #373434;
-  font-family: 'Cormorant Garamond', sans-serif;
   max-width: 1440px;
 }
+
+@keyframes fade-slide-up {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-slide-up {
+  animation: fade-slide-up 1.5s ease-out;
+}
+
 @keyframes zoom-rotate-in {
   from {
     opacity: 0;
@@ -28,12 +42,12 @@ body {
 .animate-zoom-rotate-in {
   animation: zoom-rotate-in 1.5s ease-out;
 }
+
 @keyframes zoom-rotate {
   0% {
     transform: scale(0.5) rotate(0deg);
     opacity: 0;
   }
- 
   100% {
     transform: scale(1) rotate(360deg);
     opacity: 1;
@@ -43,4 +57,3 @@ body {
 .animate-zoom-rotate {
   animation: zoom-rotate 3s ease-in-out infinite;
 }
-
