@@ -1,1 +1,64 @@
-hello my name is virginie.apres plus de 20 ans dans la communication et le marketing commercial ,je me suis decouverte une passion pour le developpement web a 45 ans je me suis donc lancer un nouveau defi en me reconvertissant dans le monde du developpement webkitURL,j ai donc suivi une formation de 9 mois pendant laquelle j ai appris la creation de site  le design et les differents langages technologique les plus utilisés a savoir react et  next et typescript maintenant je suis prete arelever de noveaux defis et a vous proposer mes services transfromez vos idees en application site web l optimisation et le seo m ont permis 
+import React, { useState, useEffect, FC, useCallback } from 'react';
+
+interface ModalProps {
+    isOpen: boolean;
+    onClose: () => void;
+    children: React.ReactNode;
+}
+
+const Modal: FC<ModalProps> = ({ isOpen, onClose, children }) => {
+    const [modalOpen, setModalOpen] = useState(false);
+
+    useEffect(() => {
+        setModalOpen(isOpen);
+    }, [isOpen]);
+
+    const closeModal = useCallback(() => {
+        setModalOpen(false);
+        onClose();
+      }, [onClose, setModalOpen]);
+
+    const handleKeyDown = useCallback((event: KeyboardEvent) => {
+        if (event.key === 'Escape') {
+            closeModal();
+        }
+    }, [closeModal]);
+    const handleClickOutside = useCallback((event: MouseEvent) => {
+        if ((event.target as HTMLElement).classList.contains('modal-overlay')) {
+            closeModal();
+        }
+    }, [closeModal]);
+
+    useEffect(() => {
+        document.addEventListener('keydown', handleKeyDown);
+        return () => {
+            document.removeEventListener('keydown', handleKeyDown);
+        };
+    }, [handleKeyDown]);
+
+    useEffect(() => {
+        if (modalOpen) {
+            document.addEventListener('click', handleClickOutside);
+        } else {
+            document.removeEventListener('click', handleClickOutside);
+        }
+        return () => {
+            document.removeEventListener('click', handleClickOutside);
+        };
+    }, [modalOpen, handleClickOutside]);
+
+    return (
+        <>
+            {modalOpen && (
+                <div className="fixed inset-0 bg-black bg-opacity-60 flex justify-center items-center z-50 modal-overlay">
+                    <div className="relative bg-white rounded-lg shadow-lg p-6 max-w-3xl w-full max-h-full overflow-auto">
+                        <button className="absolute top-2 right-4 text-2xl text-gray-600 hover:text-white" onClick={closeModal}>X</button>
+                        {children}
+                    </div>
+                </div>
+            )}
+        </>
+    );
+};
+
+export default Modal;

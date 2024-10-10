@@ -9,16 +9,16 @@ import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
 const Header: React.FC = () => {
   return (
     <header className="relative">
-      <div className="absolute top-0 right-0 flex space-x-4 p-4">
+      <div className="absolute top-0 right-0 flex space-x-4 p-4 z-10">
+        <a href={`mailto:${data.email.url}`} aria-label="Email">
+          <FontAwesomeIcon icon={faEnvelope} className="text-black text-2xl" />
+        </a>
         {data.links.map((link, index) => (
           <a key={index} href={link.url} target="_blank" rel="noopener noreferrer" aria-label={link.name}>
             {link.name.toLowerCase() === 'linkedin' && <FontAwesomeIcon icon={faLinkedin} className="text-black text-2xl" />}
             {link.name.toLowerCase() === 'github' && <FontAwesomeIcon icon={faGithub} className="text-black text-2xl" />}
           </a>
         ))}
-        <a href={data.email.url} aria-label="Email">
-          <FontAwesomeIcon icon={faEnvelope} className="text-black text-2xl" />
-        </a>
       </div>
       <section id="banner" className="relative flex flex-col items-center justify-center w-full h-[500px]">
         <figure className="absolute inset-0 m-0 w-full h-full z-[-1]">
@@ -31,7 +31,7 @@ const Header: React.FC = () => {
         </figure>
         <h1 className="text-3xl text-center text-black mt-20 animate-zoom-rotate-in">I am a Front-End Developer</h1>
         <nav className="flex space-x-4 mb-4 mt-8"> 
-          <a href="#about me" className="text-black">About Me</a>
+          <a href="#about" className="text-black">About Me</a>
           <a href="#skills" className="text-black">Skills</a>
           <a href="#projects" className="text-black">Projects</a>
           <a href="#contact" className="text-black">Contact</a>
